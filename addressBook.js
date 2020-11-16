@@ -201,7 +201,11 @@ console.log("Number of contacts= " + contactsCount);
 findPersonInCity("Third", "Kanpur");
 findPersonInCity("Second", "Pune");
 
+// UC 9
 findContactsByCity("Kanpur");
 findContactsByState("Uttar Pradesh");
 
-getContactsCount("Kanpur");
+// UC 10
+getCountByCity("Kanpur");
+
+// UC 11
