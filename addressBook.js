@@ -179,8 +179,13 @@ function getCountByCity(city) {
     console.log("In City count--- " + count);
 }
 
-function getSortedContacts() {
+function getSortedContactsByName() {
     addressBookArray.sort((contact1, contact2) => contact1.firstName.localeCompare(contact2.firstName));
+    console.log(addressBookArray);
+}
+
+function getSortedContactsByCity() {
+    addressBookArray.sort((contact1, contact2) => contact1.city.localeCompare(contact2.city));
     console.log(addressBookArray);
 }
 
@@ -214,4 +219,7 @@ findContactsByState("Uttar Pradesh");
 getCountByCity("Kanpur");
 
 // UC 11
-getSortedContacts();
+getSortedContactsByName();
+
+// UC12
+getSortedContactsByCity();
