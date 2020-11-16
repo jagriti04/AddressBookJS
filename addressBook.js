@@ -173,6 +173,12 @@ function findContactsByState(state) {
     console.log("In State--- " + contacts);
 }
 
+function getCountByCity(city) {
+    let contacts = addressBookArray.filter(contact => contact.city == city);
+    let count = contacts.reduce(count => count + 1, 0);
+    console.log("In City count--- " + count);
+}
+
 let addressBookArray = new Array();
 
 let firstContact = new ContactDetail("First", "Contact", "India", "Agra", "Uttar Pradesh", 123456, 123456789, "abcdf@123.com");
@@ -197,3 +203,5 @@ findPersonInCity("Second", "Pune");
 
 findContactsByCity("Kanpur");
 findContactsByState("Uttar Pradesh");
+
+getContactsCount("Kanpur");
