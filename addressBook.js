@@ -179,6 +179,11 @@ function getCountByCity(city) {
     console.log("In City count--- " + count);
 }
 
+function getSortedContacts() {
+    addressBookArray.sort((contact1, contact2) => contact1.firstName.localeCompare(contact2.firstName));
+    console.log(addressBookArray);
+}
+
 let addressBookArray = new Array();
 
 let firstContact = new ContactDetail("First", "Contact", "India", "Agra", "Uttar Pradesh", 123456, 123456789, "abcdf@123.com");
@@ -209,3 +214,4 @@ findContactsByState("Uttar Pradesh");
 getCountByCity("Kanpur");
 
 // UC 11
+getSortedContacts();
